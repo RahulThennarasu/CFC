@@ -3,16 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Minimalistic Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
 
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav li:last-child {
+            margin-right: 0;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #007bff;
+        }
+
+        .login-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Welcome to Our Platform</h1>
-        <p class="description">Start creating your amazing content now!</p>
-        <a href="create-page.html" class="create-button">Create</a>
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore Drive</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Create</a></li>
+        </ul>
+        <a href="#" class="login-button">Login</a>
     </div>
 </body>
 </html>
