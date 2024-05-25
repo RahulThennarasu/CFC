@@ -1,69 +1,42 @@
 body {
-    background-color: #ffffff;
-    font-family: 'Garamond', serif;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
 }
 
 .container {
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
+    text-align: center;
 }
 
-.main-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    margin: 20px 0;
-}
-
-.header h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    margin: 10px 0;
-}
-
-.content p {
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-    margin: 20px 0;
-}
-
-.button-container {
-    margin: 20px 0;
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
 }
 
 .create-button {
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-    background-color: #007BFF;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .create-button:hover {
     background-color: #0056b3;
-}
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease-in;
-}
-
-.container > div {
-    opacity: 0;
 }
