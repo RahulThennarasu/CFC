@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Drive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f0f0; /* Light grey background */
+            color: #333;
+        }
+        header {
+            background-color: #9CAF88; /* Sage green header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 15px;
+            background-color: #9CAF88; /* Sage green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+        button:hover {
+            background-color: #8B8C7A; /* Darker sage green on hover */
+        }
+        .gofundme-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .gofundme-section a {
+            color: #9CAF88;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .gofundme-section a:hover {
+            text-decoration: underline;
+        }
+        #custom-drive-type {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Create Your Drive
+    </header>
+    <div class="container">
+        <h1>Customize Your Drive</h1>
+        <form>
+            <label for="drive-name">Drive Name:</label>
+            <input type="text" id="drive-name" name="drive-name" placeholder="Enter the name of your drive" required>
+
+            <label for="drive-type">Drive Type:</label>
+            <select id="drive-type" name="drive-type" required>
+                <option value="food">Food</option>
+                <option value="supplies">Supplies</option>
+                <option value="clothes">Clothes</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="text" id="custom-drive-type" name="custom-drive-type" placeholder="Enter your custom drive type">
+
+            <label for="drive-description">Description:</label>
+            <textarea id="drive-description" name="drive-description" rows="5" placeholder="Describe the purpose and details of your drive" required></textarea>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="drive-goals">Goals:</label>
+            <input type="text" id="drive-goals" name="drive-goals" placeholder="Enter the goals for your drive" required>
+
+            <label for="drop-off-locations">Drop-off Locations:</label>
+            <textarea id="drop-off-locations" name="drop-off-locations" rows="3" placeholder="Enter the drop-off locations for the donations" required></textarea>
+
+            <label for="contact-info">Contact Information:</label>
+            <input type="text" id="contact-info" name="contact-info" placeholder="Enter your contact information" required>
+
+            <button type="submit">Create Drive</button>
+        </form>
+        <div class="gofundme-section">
+            <p>Want to raise funds for your drive? <a href="https://www.gofundme.com" target="_blank">Create a GoFundMe campaign</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('drive-type').addEventListener('change', function() {
+            var customDriveType = document.getElementById('custom-drive-type');
+            if (this.value === 'other') {
+                customDriveType.style.display = 'block';
+                customDriveType.setAttribute('required', 'required');
+            } else {
+                customDriveType.style.display = 'none';
+                customDriveType.removeAttribute('required');
+            }
+        });
+    </script>
+</body>
+</html>
