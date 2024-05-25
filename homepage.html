@@ -3,84 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Minimalistic Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo {
-            font-size: 1.5em;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .nav {
-            display: flex;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav li {
-            margin-right: 20px;
-        }
-
-        .nav li:last-child {
-            margin-right: 0;
-        }
-
-        .nav a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        .nav a:hover {
-            color: #007bff;
-        }
-
-        .login-button {
-            font-size: 1.2em;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-        }
-
-        .login-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <a href="#" class="logo">Logo</a>
         <ul class="nav">
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="exploreDrive.html">Explore Drive</a></li>
-            <li><a href="partner.html">Partner</a></li>
-            <li><a href="createDrive.html">Create</a></li>
         </ul>
-        <a href="#" class="login-button">Login</a>
     </div>
+
+    <div class="title-container">
+        <h1 class="big-title">InclusivEd</h1>
+    </div>
+    <div class="body">
+        <br><h2 class="header2">About Us</h2>
+        <div class = "body2">
+            <br> <p>-------------------------</p>
+            <br> <p>600,000 children suffer from visual impairment.</p>
+            <br> <p>373,000 kids have auditorial issues.</p>
+            <br> <p>More than 4% of the entire population is color blind.</p>
+            <br> <h3>We're here to help.</h3>
+            <br>
+        </div class = "body2">
+        <ul class="nav">
+        <li><a href="download.html">Download</a></li>
+    </ul>
+    </div class="body">
+
+    <!-- Additional content for scrolling -->
+    <div class="bottom-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque turpis eu est tempus, id hendrerit justo tincidunt. Nulla facilisi. Sed vitae nisl non nisl semper fermentum nec eu nunc. Suspendisse potenti.</p>
+        <p>Donec vel turpis eget magna malesuada finibus. Phasellus posuere euismod diam, id vestibulum leo condimentum nec. Morbi sit amet aliquet est. Ut non libero in nulla laoreet feugiat vitae sed ligula.</p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            fadeIn('.big-title');
+            fadeInAll('.container img');
+            fadeInAll('.container p');
+            fadeInAll('.nav li');
+            fadeIn('.download-button');
+            fadeIn('.bottom-content');
+        });
+
+        function fadeIn(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+                var position = element.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (position < windowHeight) {
+                    element.style.opacity = "1";
+                }
+            }
+        }
+
+        function fadeInAll(selector) {
+            var elements = document.querySelectorAll(selector);
+            elements.forEach(function(element) {
+                var position = element.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (position < windowHeight) {
+                    element.style.opacity = "1";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

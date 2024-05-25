@@ -3,31 +3,52 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.logo {
+    font-size: 1.5em;
     color: #333;
+    text-decoration: none;
 }
 
-.description {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #666;
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.create-button {
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
     font-size: 1.2em;
-    padding: 15px 30px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.download-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -37,6 +58,32 @@ body {
     text-decoration: none;
 }
 
-.create-button:hover {
+.login-button:hover {
     background-color: #0056b3;
+}
+
+/* CSS for bottom content */
+/* CSS for bottom content */
+.bottom-content {
+    margin-top: 1000px; /* Adjust as needed to create enough space for scrolling */
+    padding: 20px;
+    background-color: #ccd7d2; /* Darker grey-green color */
+    color: #121111; /* Text color */
+    font-size: 1.2em;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+.big-title {
+    font-family: 'Garamond', sans-serif;
+    font-size: 55px;
+    text-align: center; /* Center the title */
+    margin-top: 300px; /* Add some space from the top */
+}
+.header2 {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    text-align: center;
+}
+.body2{
+    text-align: center;
+    font-family: 'Montserraf', sans-serif;
 }
