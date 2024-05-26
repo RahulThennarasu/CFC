@@ -1,2 +1,2 @@
-# CFC
-Code For Cause 
+# inclusive.edu
+
