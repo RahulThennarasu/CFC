@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #9890ba;
 }
 
 .container {
@@ -43,13 +43,13 @@ body {
 }
 
 .nav a:hover {
-    color: #007bff;
+    color: #f0f7f8;
 }
 
 .download-button {
     font-size: 1.2em;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #282828;
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,15 +59,15 @@ body {
 }
 
 .login-button:hover {
-    background-color: #0056b3;
+    background-color: #1c1c1c;
 }
 
 /* CSS for bottom content */
 /* CSS for bottom content */
 .bottom-content {
-    margin-top: 1000px; /* Adjust as needed to create enough space for scrolling */
+    margin-top: 2000px; /* Adjust as needed to create enough space for scrolling */
     padding: 20px;
-    background-color: #ccd7d2; /* Darker grey-green color */
+    background-color: #ffffff; /* White color */
     color: #121111; /* Text color */
     font-size: 1.2em;
     opacity: 0; /* Initially set opacity to 0 for fade-in effect */
