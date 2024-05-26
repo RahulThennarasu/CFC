@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('screenshots/backdrop1.png'); /* Replace 'path/to/your/image.png' with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container {
@@ -10,8 +13,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff54;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.445);
 }
 
 .logo {
@@ -25,6 +28,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: #94691f
 }
 
 .nav li {
@@ -43,13 +47,13 @@ body {
 }
 
 .nav a:hover {
-    color: #007bff;
+    color: #009572;
 }
 
 .download-button {
     font-size: 1.2em;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #eba50d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -65,25 +69,61 @@ body {
 /* CSS for bottom content */
 /* CSS for bottom content */
 .bottom-content {
-    margin-top: 1000px; /* Adjust as needed to create enough space for scrolling */
+    margin-top: 400px; /* Adjust as needed to create enough space for scrolling */
     padding: 20px;
-    background-color: #ccd7d2; /* Darker grey-green color */
-    color: #121111; /* Text color */
+    background-color: #0c0c0c; /* Darker grey-green color */
+    color: #fcfcfc; /* Text color */
     font-size: 1.2em;
     opacity: 0; /* Initially set opacity to 0 for fade-in effect */
     transition: opacity 0.5s ease; /* Add transition for opacity */
+    font-family: 'Garamond', sans-serif;
+    text-align: center;
 }
 .big-title {
     font-family: 'Garamond', sans-serif;
     font-size: 55px;
     text-align: center; /* Center the title */
     margin-top: 300px; /* Add some space from the top */
+    color: #000000;
 }
 .header2 {
     font-family: "Goudy Bookletter 1911", sans-serif;
     text-align: center;
+    color: #eba50d;
 }
 .body2{
     text-align: center;
     font-family: 'Montserraf', sans-serif;
+}
+.downloadButton {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(45, 92, 92);
+    text-align: center;
+    margin-left:713px;
+}
+.downloadButton2 {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(45, 92, 92);
+    text-align: center;
+    margin-left:702px;
+}
+.backdrop{
+    background-image: url(screenshots/backdrop1.png);
+}
+.logo img {
+    max-height: 80px; /* Adjust the size of the logo */
+    border-radius: 30px;
+}
+.center{
+    text-align: center;
+}
+.leftAlign{
+    text-align: center;
+    color: #ffea00;
 }

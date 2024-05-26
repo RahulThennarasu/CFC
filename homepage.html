@@ -9,35 +9,58 @@
 </head>
 <body>
     <div class="container">
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo"><img src="screenshots/logo.png" alt="Logo"></a>
         <ul class="nav">
             <li><a href="homepage.html">Home</a></li>
         </ul>
     </div>
 
     <div class="title-container">
-        <h1 class="big-title">InclusivEd</h1>
+        <h1 class="big-title">inclusive.edu</h1>
     </div>
     <div class="body">
         <br><h2 class="header2">About Us</h2>
-        <div class = "body2">
-            <br> <p>-------------------------</p>
+        <div class="body2">
+            <br> <p>--------------------------------------</p>
             <br> <p>600,000 children suffer from visual impairment.</p>
-            <br> <p>373,000 kids have auditorial issues.</p>
+            <br> <p>373,000 kids have auditory issues.</p>
             <br> <p>More than 4% of the entire population is color blind.</p>
             <br> <h3>We're here to help.</h3>
             <br>
-        </div class = "body2">
-        <ul class="nav">
-        <li><a href="download.html">Download</a></li>
-    </ul>
-    </div class="body">
-
-    <!-- Additional content for scrolling -->
-    <div class="bottom-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque turpis eu est tempus, id hendrerit justo tincidunt. Nulla facilisi. Sed vitae nisl non nisl semper fermentum nec eu nunc. Suspendisse potenti.</p>
-        <p>Donec vel turpis eget magna malesuada finibus. Phasellus posuere euismod diam, id vestibulum leo condimentum nec. Morbi sit amet aliquet est. Ut non libero in nulla laoreet feugiat vitae sed ligula.</p>
+        </div>
+        <ul class="downloadButton">
+            <li><a href="files/ASL.zip" class="download-button" download="model2.zip">Download ASL Model</a></li>
+        </ul>
+        <div class = "center">
+            <br>
+            <a>-------------------------- </a>
+        </div>
+        <ul class="downloadButton2">
+            <li><a href="files/vision-implementation.zip" class="download-button" download="model2.zip">Download Vision Model</a></li>
+        </ul>
+        <div class = "center">
+            <br>
+            <a>-------------------------------------------------------- </a>
+        </div>
+ 
     </div>
+
+    <div class="bottom-content">
+        <h4>References for our MLS models: </h4>
+        <div class="left-align">
+            <p>inclusivEDU visually impaired MLS model:</p>
+            <a style="color:rgb(255, 234, 0);" href="https://github.com/RahulThennarasu/inclusive.edu/tree/main/vision-implementation/">https://github.com/inclusivEDU/inclusive.edu/tree/main/vision-implementation/</a>
+        </div>
+        <div class="left-align">
+            <a style="color:rgb(255, 213, 0);" href="https://github.com/RahulThennarasu/inclusive.edu/tree/main/ASL/">https://github.com/inclusiveEDU/inclusive.edu/tree/main/ASL/</a>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>Contact us at info@inclusivedu.com | Follow us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a></p>
+        <p>&copy; 2024 InclusivEdu. All rights reserved.</p>
+    </footer>
 
     <script>
         window.addEventListener('scroll', function() {
@@ -45,8 +68,11 @@
             fadeInAll('.container img');
             fadeInAll('.container p');
             fadeInAll('.nav li');
-            fadeIn('.download-button');
-            fadeIn('.bottom-content');
+            fadeInAll('.bottom-content');
+            fadeInAll('.body2');
+            fadeInAll('.center');
+            fadeInAll('.leftAlign');
+            fadeInAll('.downloadButton');
         });
 
         function fadeIn(selector) {
@@ -73,3 +99,4 @@
     </script>
 </body>
 </html>
+
